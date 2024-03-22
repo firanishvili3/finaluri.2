@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="in.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <span class="icon-close"
+          ><a href="index.html"><i class="bx bx-x"></i></a
+        ></span>
+        <div class="login-box register">
+          <h2>registration</h2>
+          <form id="registration" action="#">
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-user"></i></span>
+              <input
+                id="username"
+                type="text"
+                name="username"
+                placeholder="Enter Username"
+              />
+              <label for="username">Username</label>
+              <p class="error-text" id="error-username"></p>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-envelope"></i></span>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <label>Email</label>
+              <p class="error-text" id="emailError"></p>
+            </div>
+            <div class="input-box">
+              <input
+                id="password"
+                type="password"
+                name="passw"
+                placeholder="Enter password"
+              />
+              <label>Password</label>
+              <i class="bx bx-show-alt icon" id="showIcon"></i>
+              <p class="error-text" id="error-passw"></p>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+              <input
+                id="password2"
+                type="password"
+                name="passw2"
+                placeholder="Confirm your password"
+              />
+              <label>Confirm Password</label>
+              <p class="error-text" id="error-passw2"></p>
+            </div>
+            <div class="remember-forgot">
+              <input type="checkbox" id="agree" name="check" />
+              <label for="agree">I agree to the terms & conditions</label>
+              <p class="error-text" id="error-check"></p>
+            </div>
+            <button type="submit" class="btn-login-page">Register</button>
+            <div class="login-register">
+              <p>
+                Alredy have an account?
+                <a class="login-link" href="#">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="in.js"></script>
+  </body>
+</html>
